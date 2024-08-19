@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Proiect C++" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Proiect C++" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Proiect C++" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="../SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="../SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="Angajat/Angajat.h" />
+		<Unit filename="Angajat/Sursa.cpp" />
+		<Unit filename="Design/Button.cpp" />
+		<Unit filename="Design/Button.h" />
+		<Unit filename="Design/Label.cpp" />
+		<Unit filename="Design/Label.h" />
+		<Unit filename="Design/TextBox.cpp" />
+		<Unit filename="Design/TextBox.h" />
+		<Unit filename="Id/Identificare.h" />
+		<Unit filename="Id/Sursa.cpp" />
+		<Unit filename="Lista/Lista.h" />
+		<Unit filename="Lista/Source.cpp" />
+		<Unit filename="Meniuri/Meniuri.h" />
+		<Unit filename="Meniuri/Menu.h" />
+		<Unit filename="Meniuri/Source.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
